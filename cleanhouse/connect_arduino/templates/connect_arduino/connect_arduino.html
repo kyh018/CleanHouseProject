@@ -1,0 +1,15 @@
+<!-- control_app/templates/control_app/control_page.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arduino Control</title>
+</head>
+<body>
+    <h1>Arduino Control Page</h1>
+    <form action="{% url 'send_signal' %}" method="get">
+        <label for="signal">Signal:</label>
+        <input type="text" id="signal" name="signal" required>
+        <button type="submit">Send Signal</button>
+    </form>
+</body>
+</html>
